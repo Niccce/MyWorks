@@ -1,0 +1,50 @@
+ul li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.main,.hmain{
+    background-image: url("../image/menuBackground.jpg");
+    background-size: 122px;
+    background-repeat: repeat-x;
+    width: 120px;
+}
+
+li{
+    background-color: lightgrey;
+}
+a{
+    text-decoration: none;
+    padding-left: 30px;
+    display: block;
+    /*display设置为block可以让a拥有块元素的一些特性，这样设置a标签的宽高才有作用*/
+    width: 90px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.main a,.hmain a{
+    color: white;
+    background-image: url("../image/triangle.png");
+    background-repeat: no-repeat;
+
+    /*左边3px距离，垂直居中*/
+    background-position: 3px center;
+
+}
+
+.main li a,.hmain li a{
+    color: black;
+    background-image: none;
+}
+
+.main ul,.hmain ul{
+    display: none;
+}
+
+.hmain{
+    float: left;
+    margin-right: 2px;
+}

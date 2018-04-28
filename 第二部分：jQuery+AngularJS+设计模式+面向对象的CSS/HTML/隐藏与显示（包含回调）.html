@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/hideAndShow.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/hideAndShow.css">
+    <title>Title</title>
+</head>
+<body>
+    <p id="p1">林峯</p>
+    <button id="hide">隐藏</button>
+    <button id="show">显示</button>
+    <button id="hideAndShow">隐藏和显示</button>
+
+    <script>
+        for(var i=0;i<5;i++)
+        {
+            $("<div>").appendTo(document.body);
+        }
+        $("div").click(function () {
+            $(this).hide(1000,function () {
+                $(this).remove();
+            });
+            //隐藏之后把div移除了，不移也可以，就留下一个参数1000；
+            //动画执行完毕之后执行方法，称回调，这里hide之后执行function就是回调
+        });
+    </script>
+
+
+</body>
+</html>
