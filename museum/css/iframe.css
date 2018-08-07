@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body{
+	background-color: rgba(61,61,61,0.5);
+	color: white;
+	scrollbar-base-color: rgba(61,61,61,0.5);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: rgba(150,150,150,1);
+}
+
+::-webkit-scrollbar-corner
+{
+	background-color: transparent;
+}
+
+
+
